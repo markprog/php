@@ -12,7 +12,7 @@
         echo date(DATE_RSS). "<br>";
         echo $_SERVER['HTTP_USER_AGENT'];
     }
-
+ 
     
 
     ?>
