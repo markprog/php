@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <?php
-    {
-        echo "hi". "<br>";
-        echo date(DATE_RSS). "<br>";
-        echo $_SERVER['HTTP_USER_AGENT'];
-    }
- 
-    
+    <h2><?php echo "Basic php-file";?></h2>
+        <?php # require_once('new-file.php');?>
+        <?php include_once('new-file.php');?>
 
-    ?>
+     
     
 
 
