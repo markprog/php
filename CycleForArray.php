@@ -7,30 +7,30 @@ list($one, $two, $three) = $arr;
 //echo $one . $two . $three;
 
 for ($i=0; $i < count($arr); $i++) {
-    echo $arr[$i] * 10 . "<br>";
+    echo $arr[$i] + 5 . "<br>";
 }
 
 $vas = [
     'name' => 'vasilii',
-    'age' => '36',
+    'age' => 36,
     'weight' => 93
 
 ];
 
  
-// foreach ($vas as $key => $value) {
-//     if ($key == 'name'){
-//         $key = 'Имя';
-//     }
-//     elseif ($key == 'age'){
-//         $key = 'Возраст';
-//     }
-//     elseif ($key == 'weight'){
-//         $key = 'Вес';
-//     }
-//     echo $key . " " . $value . "<br>";
+foreach ($vas as $key => $value) {
+    if ($key == 'name'){
+        $key = 'Имя';
+    }
+    elseif ($key == 'age'){
+        $key = 'Возраст';
+    }
+    elseif ($key == 'weight'){
+        $key = 'Вес';
+    }
+    echo $key . " " . $value . "<br>";
     
-// }
+}
 
 
 // foreach ($vas as $result) {
@@ -49,7 +49,7 @@ $vas = [
 
 foreach ($arr as $key => $result) {
 
-    echo $key . " - " . $result . "<br>";
+    echo $key . " (" . $result . ") <br>";
     
 }
 
