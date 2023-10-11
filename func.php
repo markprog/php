@@ -29,4 +29,23 @@ function getResult($var){
 $new = 10;
 echo getResult($new);
 
+function box(){
+    function inn(){
+        echo "TEST";
+    }
+    inn();
+}
+
+box();
+
+
+
+
+
+
+
+
+
+
+
 ?>
