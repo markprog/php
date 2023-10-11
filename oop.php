@@ -1,6 +1,6 @@
 <?php
 //Классы и объекты
-require_once 'SomePeople.php';
+require_once 'classes/SomePeople.php';
 
 $some = new SomePeople;
 echo is_object($some);
@@ -27,6 +27,20 @@ $loc->x = 23;
 echo $loc->x;
 //echo $loc->y;
 
+
+//Классы и объекты
+class SomePeople {
+    public $age;    //public - зона видимости
+    public $name;
+
+    public static $people = 1;
+}
+
+//echo SomePeople::$people;
+
+$fr = $sc = 3;
+echo $fr . '<br>';
+echo $sc; 
 
 
 

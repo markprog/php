@@ -18,4 +18,7 @@ echo gettype($flo) . '<br>';
 echo is_int($num) . '<br>';
 
 
+
+
+
 ?>
