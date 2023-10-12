@@ -12,27 +12,27 @@
 </head>
 <body>
     
-<form action="" method="post">
+<form action="action.php" method="post">
 
-    <p>Ваше имя<input type="text" name="name"></p>
-    <p>Ваш возраст:<input type="text" name="age"></p>
+    <p>Имя мальчика<input type="text" name="boy_name"></p>
+    <p>Имя девочки<input type="text" name="girl_name"></p>
     <p><input type="submit"></p>
 </form>
 
 <?php
-echo $_POST['name'] . (int)($_POST['age']);
+// echo $_POST['bname'] . (int)($_POST['age']);
 
-$num1 = $_POST['name'];
+// $num1 = $_POST['name'];
 
 
-function getNames($num1, $num2){
-    $num1 = $_POST['name'];
-    $num2 = $_POST['age'];
-    $sum = $num1 . ' и ' . $num2;
-    return $sum;
-}
+// function getNames($num1, $num2){
+//     $num1 = $_POST['name'];
+//     $num2 = $_POST['age'];
+//     $sum = $num1 . ' и ' . $num2;
+//     return $sum;
+// }
 
-echo getNames($num1, $num2);
+// echo getNames($num1, $num2);
 
 ?>
 
