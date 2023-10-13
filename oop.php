@@ -61,8 +61,8 @@ echo $family->friends();
 // echo $obj->hello();
 // echo $obj->bye();
 
-echo Hi::hello();
-//echo Hi::bye();
+
+
 
 // Ключевое слово Self
 
@@ -90,6 +90,104 @@ class MainPageClass{
 }
 
 MainPageClass::getPage();
+
+
+
+class Hi {
+
+    // __conctruct() --- Конструктор
+
+
+    public static function hello()
+    {
+        return '<br>Hello!';
+    }
+
+    public function bye()
+    {
+        return '<br>Bye!';
+    }
+}
+echo Hi::hello();
+//echo Hi::bye();
+
+
+class Construct{
+    public $y;
+    private $x;
+
+    public function __construct($x){
+        echo "<br>отработал конструктор!";
+        $this->y = '<br>' . 69;
+        $this->x = $x;
+    }
+
+    public function __destruct(){
+        echo '<br>деструктор отработал';
+    }
+
+    public function getY(){
+        return $this->y;
+    }
+
+    public function getX(){
+        return $this->x;
+    }
+}
+
+$var = new Construct(x: '<br>some text');
+echo $var->y;
+
+echo $var->getX();
+
+// Методы аксессоры __set() __get()
+
+class Accessor{
+    private $one = [];
+
+    public function __get($key){
+        if(array_key_exists($key, $this->one)){
+            return $this->one[$key];
+        }else return 'Array is empty';
+
+
+
+    }
+    public function __set($key, $value){
+
+        $this->one[$key] = $value;
+
+
+    }
+
+
+
+}
+
+$var = new Accessor();
+$var->text = 'Lorem Ipsum';
+$var->name = 'Konst';
+$var->age = 18;
+
+echo '<pre>';
+print_r($var);
+echo '</pre>';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
